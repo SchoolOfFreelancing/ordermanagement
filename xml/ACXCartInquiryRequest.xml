@@ -1,0 +1,22 @@
+<ACXCartInquiryRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+    </RequestRouter>
+    <CartInquiryRequest>
+        <RequestItem>
+            <ID></ID>
+            <PartNum></PartNum>
+            <MfgCode></MfgCode>
+            <Qty></Qty>
+            <Price>
+              <UnitCost></UnitCost>
+            </Price>
+        </RequestItem>
+    </CartInquiryRequest>
+</ACXCartInquiryRequest>

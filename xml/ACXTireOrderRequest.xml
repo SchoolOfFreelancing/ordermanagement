@@ -1,0 +1,26 @@
+<ACXTireOrderRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+    </RequestRouter>
+    <TireOrderRequest>
+        <ItemDefaults>
+            <OrderType value="Pickup"/>
+        </ItemDefaults>
+        <RequestItem>
+            <ID></ID>
+            <PartNum></PartNum>
+            <MfgCode></MfgCode>
+            <Qty></Qty>
+        </RequestItem>
+        <RequestOrder>
+            <TimePlaced></TimePlaced>
+            <PONumber></PONumber>
+        </RequestOrder>
+    </TireOrderRequest>
+</ACXTireOrderRequest>

@@ -1,0 +1,10 @@
+<ACXOrderDetailsRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <OrderDetails>
+    </OrderDetails>
+</ACXOrderDetailsRequest>
+

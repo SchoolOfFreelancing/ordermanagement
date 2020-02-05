@@ -1,0 +1,15 @@
+<ACXCatalogProfileRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <ReturnReceipt value='No'/>
+    <CatalogRequest>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+        <MCLRequest>
+            <Type value='Dealer'/>
+        </MCLRequest>
+    </CatalogRequest>
+</ACXCatalogProfileRequest>

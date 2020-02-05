@@ -1,0 +1,57 @@
+<ACXPartReturnRequest>
+	<!--(Envelope , RequestRouter , PartReturnRequest)-->
+	<Envelope>
+		<!--(BuyPartnerID , DocVersNum , DocGenBy)-->
+		<BuyPartnerID>
+		</BuyPartnerID>
+		<DocVersNum>1.0</DocVersNum>
+		<DocGenBy>ACX SDK Example Program</DocGenBy>
+	</Envelope>
+	<RequestRouter>
+		<!--(SellPartnerID , CustNum , ReturnReceipt?)-->
+		<SellPartnerID>
+		</SellPartnerID>
+		<CustNum>
+		</CustNum>
+		<ReturnReceipt value = "No"/>
+	</RequestRouter>
+	<PartReturnRequest>
+		<!--(RequestItem* , ReturnMsg? , ReturnAuthorization)-->
+		<RequestItem>
+			<!--(ID , PartNum , BuyerDesc , MfgCode , Qty , Price , Msg? , PONumber? , ReturnCode , OriginalInvoice)-->
+			<ID>
+			</ID>
+			<PartNum>
+			</PartNum>
+			<BuyerDesc>
+			</BuyerDesc>
+			<MfgCode>
+			</MfgCode>
+			<Qty>
+			</Qty>
+			<Price>
+				<!--(UnitCost , UnitList? , CoreCost? , CoreList?)-->
+				<UnitCost>
+				</UnitCost>
+				<UnitList>
+				</UnitList>
+				<CoreCost>
+				</CoreCost>
+				<CoreList>
+				</CoreList>
+			</Price>
+			<Msg>
+			</Msg>
+			<PONumber>
+			</PONumber>
+			<ReturnCode>
+			</ReturnCode>
+			<OriginalInvoice>
+			</OriginalInvoice>
+		</RequestItem>
+		<ReturnMsg>
+		</ReturnMsg>
+		<ReturnAuthorization>
+		</ReturnAuthorization>
+	</PartReturnRequest>
+</ACXPartReturnRequest>

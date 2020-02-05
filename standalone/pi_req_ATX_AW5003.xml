@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<!--
+<!DOCTYPE ACXPartInquiryRequest SYSTEM "http://seaking.aaih.net/DTD/ACXPartInquiryRequest.dtd">
+-->
+<ACXPartInquiryRequest><Envelope><BuyPartnerID>4000300020001058</BuyPartnerID><DocVersNum>1.0</DocVersNum></Envelope><RequestRouter><SellPartnerID>4000300020001047</SellPartnerID><CustNum>DC01</CustNum><DocGenBy>xander</DocGenBy></RequestRouter><PartRequestAction><AskPayForm>No</AskPayForm><AskShipList>No</AskShipList></PartRequestAction><PartInquiryRequest><RequestItem><ID>0</ID><PartNum>AW5003</PartNum><MfgCode>ATX</MfgCode><Qty>1</Qty><ShipCode>0</ShipCode><RelCode>Regular</RelCode><BackOrderCode>C</BackOrderCode><CatVers></CatVers><CatDataVers></CatDataVers><Vehicle><CatVehID></CatVehID><Year></Year><Make></Make><Model></Model><Engine></Engine><SpeclCond>No</SpeclCond></Vehicle></RequestItem></PartInquiryRequest></ACXPartInquiryRequest>

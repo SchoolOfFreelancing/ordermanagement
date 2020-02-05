@@ -1,0 +1,51 @@
+<ACXPartnerCreationRequest>
+  <DocVersNum>1.0</DocVersNum>
+  <DocGenBy>ACX SDK Example Program</DocGenBy>
+  <AgreeToLegal value='Yes'/>
+  <LegalVersion></LegalVersion>
+  <PartnerType>
+    <PartnerTypeNumber></PartnerTypeNumber>
+    <PartnerTypeName></PartnerTypeName>
+  </PartnerType>
+  <ApplicationService>
+    <AppServiceNumber></AppServiceNumber>
+    <AppServiceName></AppServiceName>
+  </ApplicationService>    
+  <PartnerUpdateProfile>
+    <Name></Name>
+    <Phone></Phone>
+    <Fax></Fax>
+    <Address>
+      <Street></Street>
+      <City></City>
+      <State></State>
+      <Country></Country>
+      <PostalID></PostalID>
+    </Address>
+  </PartnerUpdateProfile>
+  <BillingProfile>
+    <Address>
+      <Street></Street>
+      <City></City>
+      <State></State>
+      <Country></Country>
+      <PostalID></PostalID>
+    </Address>
+  </BillingProfile>
+  <UserProfile>
+    <ID></ID>
+    <UserUpdateProfile>
+      <Person>
+        <FirstName></FirstName>
+        <MI></MI>
+        <LastName></LastName>
+        <Title></Title>
+        <Phone></Phone>
+        <Fax></Fax>
+        <Email></Email>
+      </Person>
+      <Password></Password>
+      <PasswordHint></PasswordHint>
+    </UserUpdateProfile>
+  </UserProfile>
+</ACXPartnerCreationRequest>

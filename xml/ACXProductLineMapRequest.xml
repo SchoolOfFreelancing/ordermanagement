@@ -1,0 +1,13 @@
+<ACXProductLineMapRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <ReturnReceipt value='No'/>
+    <ProductLineMapRequest>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+        <MapToPartnerID></MapToPartnerID>
+    </ProductLineMapRequest>
+</ACXProductLineMapRequest>

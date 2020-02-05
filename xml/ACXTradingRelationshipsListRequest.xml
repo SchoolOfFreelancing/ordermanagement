@@ -1,0 +1,12 @@
+<ACXTradingRelationshipsListRequest>
+  <Envelope>
+    <BuyPartnerID></BuyPartnerID>
+    <DocVersNum>1.0</DocVersNum>
+    <DocGenBy>ACX SDK Example Program</DocGenBy>  
+  </Envelope>
+  <ApplicationService>
+    <AppServiceNumber></AppServiceNumber>
+    <AppServiceName></AppServiceName>
+  </ApplicationService>
+  <ReturnExtendedInfo value='No'/>
+</ACXTradingRelationshipsListRequest>

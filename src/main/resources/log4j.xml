@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!--
+ * 
+ *  $Id$
+ *
+-->
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <appender name="APOLOGTIMING"
+             class="org.apache.log4j.RollingFileAppender">
+     <param name="Append"          value="true" />
+     <param name="File"            value="./logs/ApoSdkT.log" />
+     <param name="BufferedIO"      value="false" />
+     <param name="BufferSize"      value="2048" />
+     <param name="MaxBackupIndex"  value="4" />
+     <param name="MaxFileSize"     value="500MB" />
+     
+     <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" 
+              value="%n## [%t] %d %-5p [%x] %c{3} - %m%n"/>
+     </layout>       
+    </appender>
+    
+    <appender name="APOLOG"
+             class="org.apache.log4j.RollingFileAppender">
+     <param name="Append"          value="true" />
+     <param name="File"            value="./logs/ApoSdk.log" />
+     <param name="BufferedIO"      value="false" />
+     <param name="BufferSize"      value="2048" />
+     <param name="MaxBackupIndex"  value="4" />
+     <param name="MaxFileSize"     value="500MB" />
+     
+     <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" 
+              value="\t\t&lt;%d{MM/dd HH:mm:ss,SSS '['z']'} %-5p%n\t\t [%t] %c{2}%n%m%n\t\t&gt;%n" />
+     </layout>       
+    </appender>
+    
+  <appender name="APOBACKGROUNDLOG"
+            class="org.apache.log4j.RollingFileAppender">
+    <param name="Append"          value="true" />
+    <param name="File"            value="./logs/Background.log" />
+    <param name="BufferedIO"      value="false" />
+    <param name="BufferSize"      value="2048" />
+    <param name="MaxBackupIndex"  value="4" />
+    <param name="MaxFileSize"     value="500MB" />
+    
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" 
+             value="\t\t&lt;%d{MM/dd HH:mm:ss,SSS '['z']'} %-5p%n\t\t [%t] %c{2}%n%m%n\t\t&gt;%n" />
+    </layout>       
+  </appender>
+
+  <logger name="BackGroundTask.com.activant.aconnex.appsdk">
+    <!-- <level value ="debug" /> -->
+    <!-- <level value="info" /> -->
+    <level value="warn" />
+    <!-- <level value="error" /> -->
+    <!-- <level value="fatal" /> -->
+      <appender-ref ref="APOBACKGROUNDLOG" />
+  </logger>
+
+
+
+  <logger name="AppSDK.com.activant.aconnex.appsdk">
+    <!-- <level value ="debug" /> -->
+    <!-- <level value="info" /> -->
+    <level value="warn" />
+    <!-- <level value="error" /> -->
+    <!-- <level value="fatal" /> -->
+<!--
+      <appender-ref ref="APOLOGTIMING" />
+-->
+      <appender-ref ref="APOLOG" />
+  </logger>
+
+
+
+  <logger name="com.activant.aconnex.appsdk">
+    <!-- <level value ="debug" /> -->
+    <!-- <level value="info" /> -->
+    <level value="warn" />
+    <!-- <level value="error" /> -->
+    <!-- <level value="fatal" /> -->
+<!--
+      <appender-ref ref="APOLOGTIMING" />
+-->
+      <appender-ref ref="APOLOG" />
+  </logger>
+
+
+
+  <root>
+    <!-- <level value ="debug" /> -->
+    <!-- <level value="info" /> -->
+    <level value="warn" />
+    <!-- <level value="error" /> -->
+    <!-- <level value="fatal" /> -->
+    
+<!--
+    Setting the appender-ref here in the root will cause all logging
+    to go to this appender as well as any specific logs above
+    so this appender-ref should not be set here in the root.
+-->
+<!--
+    <appender-ref ref="APOLOG" />
+-->
+  </root>  
+</log4j:configuration>

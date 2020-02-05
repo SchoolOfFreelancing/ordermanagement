@@ -1,0 +1,21 @@
+<ACXPartnerUpdateRequest>
+  <Envelope>
+    <BuyPartnerID></BuyPartnerID>
+    <DocVersNum>1.0</DocVersNum>
+    <DocGenBy>ACX SDK Example Program</DocGenBy>  
+  </Envelope>
+  <PartnerUpdateProfile>
+    <Name></Name>
+    <Phone></Phone>
+    <Fax></Fax>   
+    <Address>
+      <Street></Street>
+      <City></City>
+      <State></State>
+      <Country></Country>
+      <PostalID></PostalID>
+    </Address>
+  </PartnerUpdateProfile>  
+</ACXPartnerUpdateRequest>
+
+

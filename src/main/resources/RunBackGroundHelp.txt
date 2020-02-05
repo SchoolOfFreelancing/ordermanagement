@@ -1,0 +1,14 @@
+.=================================================================
+. RunBackGround.bat - Runs the BackGround Task that sends Observations
+.                     and Deposits to the Repository.
+.
+. Usage:  RunBackGround libdir
+.
+. Where libdir is full path or relative path of the directory
+.              that holds the jar files. The relative path is
+.              relative to the current working directory.
+.
+. Examples:
+.   RunBackGround ./../lib
+.   RunBackGround C:\aposdk\java2.0.0.007\lib
+.=================================================================

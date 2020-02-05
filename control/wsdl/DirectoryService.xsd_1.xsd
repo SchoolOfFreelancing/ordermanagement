@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://www.epicor.com/acxim/directoryservices/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.epicor.com/acxim/directoryservices/datatypes">
+
+<xs:complexType name="connectionInfo">
+<xs:sequence>
+<xs:element name="acx1xFlag" type="xs:boolean" />
+<xs:element name="connectionListUpdateDate" type="xs:long" />
+<xs:element name="connectionURL" type="xs:string" />
+<xs:element name="expiration" type="xs:long" />
+<xs:element name="securityToken" type="xs:string" />
+<xs:element name="signature" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serviceInfoReply2">
+<xs:sequence>
+<xs:element name="expireSeconds" type="xs:int" />
+<xs:element name="gracePeriodSeconds" type="xs:int" />
+<xs:element name="maxVersion" type="xs:int" />
+<xs:element name="minVersion" type="xs:int" />
+<xs:element name="serverInfo" type="tns:serverInfo2" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serverInfo2">
+<xs:sequence>
+<xs:element name="dsServer" type="tns:server2" maxOccurs="unbounded" />
+<xs:element name="dspmServer" type="tns:server2" maxOccurs="unbounded" />
+<xs:element name="histgetServer" type="tns:server2" maxOccurs="unbounded" />
+<xs:element name="histputServer" type="tns:server2" maxOccurs="unbounded" />
+<xs:element name="obsServer" type="tns:server2" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="server2">
+<xs:sequence>
+<xs:element name="host" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+<xs:element name="protocol" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serviceInfoReply">
+<xs:sequence>
+<xs:element name="expireSeconds" type="xs:int" />
+<xs:element name="gracePeriodSeconds" type="xs:int" />
+<xs:element name="maxVersion" type="xs:int" />
+<xs:element name="minVersion" type="xs:int" />
+<xs:element name="serverInfo" type="tns:serverInfo" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serverInfo">
+<xs:sequence>
+<xs:element name="dsServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="dspmServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="histgetServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="histputServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="obsServer" type="tns:server" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="server">
+<xs:sequence>
+<xs:element name="host" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="businessSystemProvidersReply">
+<xs:sequence>
+<xs:element name="acxBusinessSystemProvidersListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="applicationServicesReply">
+<xs:sequence>
+<xs:element name="acxApplicationServicesListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnerTypesReply">
+<xs:sequence>
+<xs:element name="acxPartnerTypesListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessRule">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="type" type="tns:accessRuleType" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="notificationReply">
+<xs:sequence>
+<xs:element name="acxNotificationReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyUserReply">
+<xs:sequence>
+<xs:element name="loginPassed" type="xs:boolean" />
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="roleType" type="xs:int" />
+<xs:element name="userExists" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnersList">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnectionReply">
+<xs:sequence>
+<xs:element name="connectionListUpdateDate" type="xs:long" />
+<xs:element name="signaturePubKey" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apfKeyPair">
+<xs:sequence>
+<xs:element name="privKey" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+<xs:element name="timeModified" type="xs:dateTime" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="connectionInfoFull">
+<xs:sequence>
+<xs:element name="acx1xFlag" type="xs:boolean" />
+<xs:element name="connectionListUpdateDate" type="xs:long" />
+<xs:element name="connectionURL" type="xs:string" />
+<xs:element name="expiration" type="xs:long" />
+<xs:element name="internalConnectionURL" type="xs:string" />
+<xs:element name="securityToken" type="xs:string" />
+<xs:element name="signature" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getOptionsReply">
+<xs:sequence>
+<xs:element name="option" type="xs:string" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="country">
+<xs:sequence>
+<xs:element name="code" type="xs:int" />
+<xs:element name="name" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessRulesReply">
+<xs:sequence>
+<xs:element name="accessRule" type="tns:accessRule" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apfOnlineStatus">
+<xs:sequence>
+<xs:element name="connectionId" type="xs:string" />
+<xs:element name="dateConnected" type="xs:dateTime" />
+<xs:element name="groupId" type="xs:integer" />
+<xs:element name="ipAddress" type="xs:string" />
+<xs:element name="mqIpAddress" type="xs:string" />
+<xs:element name="nodeId" type="xs:string" />
+<xs:element name="onlineStatus" type="xs:boolean" />
+<xs:element name="timeModified" type="xs:dateTime" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessRuleWithName">
+<xs:complexContent>
+<xs:extension base="tns:accessRule">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="gateway">
+<xs:sequence>
+<xs:element name="name" type="xs:string" />
+<xs:element name="number" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="memberAffiliationReply">
+<xs:sequence>
+<xs:element name="acxMemberAffiliationListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="memberAffiliation">
+<xs:sequence>
+<xs:element name="affiliationId" type="xs:short" />
+<xs:element name="city" type="xs:string" />
+<xs:element name="description" type="xs:string" />
+<xs:element name="state" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="staticAssociationsReply">
+<xs:sequence>
+<xs:element name="acxStaticAssociationsListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buyOnBehalfOfReply">
+<xs:sequence>
+<xs:element name="valid" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="accessRuleType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="exclude" />
+<xs:enumeration value="include" />
+<xs:enumeration value="allowOnBehalfOf" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

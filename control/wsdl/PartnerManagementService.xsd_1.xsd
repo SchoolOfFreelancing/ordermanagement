@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://www.epicor.com/acxim/directoryservices/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.epicor.com/acxim/directoryservices/datatypes">
+
+<xs:complexType name="tradingRelationshipListReply">
+<xs:sequence>
+<xs:element name="acxTradingRelationshipListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="legalAgreement">
+<xs:sequence>
+<xs:element name="acxLegalAgreementReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="notificationReply">
+<xs:sequence>
+<xs:element name="acxNotificationReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnerValidReply">
+<xs:sequence>
+<xs:element name="acxPartnerValidReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tradingRelationshipReply">
+<xs:sequence>
+<xs:element name="acxTradingRelationshipReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnersList">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creationReply">
+<xs:sequence>
+<xs:element name="acxCreationReply" type="xs:string" />
+<xs:element name="groupID" type="xs:string" />
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="serverInfo" type="tns:serverInfo" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serverInfo">
+<xs:sequence>
+<xs:element name="dsServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="dspmServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="histgetServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="histputServer" type="tns:server" maxOccurs="unbounded" />
+<xs:element name="obsServer" type="tns:server" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="server">
+<xs:sequence>
+<xs:element name="host" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="groupPartnersReply">
+<xs:sequence>
+<xs:element name="acxGroupPartnersReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tradingRelationshipValidReply">
+<xs:sequence>
+<xs:element name="blockingRule" type="tns:accessRule" minOccurs="0" />
+<xs:element name="valid" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessRule">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="type" type="tns:accessRuleType" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrievePartnerReply">
+<xs:sequence>
+<xs:element name="acxPartnerReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnersListReply">
+<xs:sequence>
+<xs:element name="acxPartnersListReply" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="accessRuleType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="exclude" />
+<xs:enumeration value="include" />
+<xs:enumeration value="allowOnBehalfOf" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

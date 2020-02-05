@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://repository.acxim.epicor.com/" xmlns:ns1="http://repository.acxim.epicor.com/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://repository.acxim.epicor.com/">
+
+<xs:import namespace="http://repository.acxim.epicor.com/datatypes" schemaLocation="file:../control/wsdl/Repository.xsd_2.xsd" />
+
+<xs:element name="ServiceFault" nillable="true" type="tns:com.epicor.acxim.directoryservices.exceptions.ServiceException" />
+
+<xs:element name="depositTransaction1" type="tns:depositTransaction1" />
+
+<xs:element name="depositTransaction1Response" type="tns:depositTransaction1Response" />
+
+<xs:element name="depositTransaction2" type="tns:depositTransaction2" />
+
+<xs:element name="depositTransaction2Response" type="tns:depositTransaction2Response" />
+
+<xs:element name="getRepositoryInfo1" type="tns:getRepositoryInfo1" />
+
+<xs:element name="getRepositoryInfo1Response" type="tns:getRepositoryInfo1Response" />
+
+<xs:element name="listOrders1" type="tns:listOrders1" />
+
+<xs:element name="listOrders1Response" type="tns:listOrders1Response" />
+
+<xs:element name="password" nillable="true" type="xs:string" />
+
+<xs:element name="retrieveAllOrderDocuments1" type="tns:retrieveAllOrderDocuments1" />
+
+<xs:element name="retrieveAllOrderDocuments1Response" type="tns:retrieveAllOrderDocuments1Response" />
+
+<xs:element name="retrieveOrder1" type="tns:retrieveOrder1" />
+
+<xs:element name="retrieveOrder1Response" type="tns:retrieveOrder1Response" />
+
+<xs:element name="retrieveOrders1" type="tns:retrieveOrders1" />
+
+<xs:element name="retrieveOrders1Response" type="tns:retrieveOrders1Response" />
+
+<xs:element name="username" nillable="true" type="xs:string" />
+
+<xs:complexType name="retrieveOrder1">
+<xs:sequence>
+<xs:element name="RetrieveOrder" type="ns1:retrieveOrder" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrder1Response">
+<xs:sequence>
+<xs:element name="RetrieveOrderReply" type="ns1:retrieveOrderReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.NotificationResponseException">
+<xs:sequence>
+<xs:element name="acxNotificationResponse" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.ServiceException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRepositoryInfo1">
+<xs:sequence>
+<xs:element name="RepositoryInfoRequest" type="ns1:repositoryInfoRequest" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRepositoryInfo1Response">
+<xs:sequence>
+<xs:element name="RepositoryInfoResponse" type="ns1:repositoryInfoResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveAllOrderDocuments1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="acxTrackNum" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveAllOrderDocuments1Response">
+<xs:sequence>
+<xs:element name="RetrieveAllOrderDocumentsReply" type="ns1:retrieveAllOrderDocumentsReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrders1">
+<xs:sequence>
+<xs:element name="RetrieveOrders" type="ns1:retrieveOrders" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrders1Response">
+<xs:sequence>
+<xs:element name="RetrieveOrdersReply" type="ns1:retrieveOrdersReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositTransaction1">
+<xs:sequence>
+<xs:element name="Deposit" type="ns1:deposit" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositTransaction1Response">
+<xs:sequence>
+<xs:element name="DepositReply" type="ns1:depositReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listOrders1">
+<xs:sequence>
+<xs:element name="ListOrders" type="ns1:listOrders" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listOrders1Response">
+<xs:sequence>
+<xs:element name="ListOrdersReply" type="ns1:listOrdersReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositTransaction2">
+<xs:sequence>
+<xs:element name="Deposit" type="ns1:deposit" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositTransaction2Response">
+<xs:sequence>
+<xs:element name="DepositReply" type="ns1:depositReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

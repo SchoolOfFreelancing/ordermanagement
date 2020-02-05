@@ -1,0 +1,40 @@
+.=================================================================
+. RunExample.bat - Runs the AppSDK examples
+.
+. Usage:  runexample group_name [functions]
+.
+. Groups and their functions are:
+.
+.   AdminManagement:
+.     partnerTypes, listServices, listProviders,
+.     listAffiliations, listAssociations, legalAgreement
+.   PartnerManagement:
+.     getPartner, partnerStatus, checkPartner, 
+.     listPartners, getGroupPartners, 
+.     createPartner, updatePartner,
+.     listRelationships, checkRelationship,
+.     getRelationship, createRelationship,
+.     updateRelationship, removeRelationship,
+.   PartOrderManagement:
+.     partInquiry, partOrder, stockOrder, returnParts
+.     listOrders, orderDetail, orderDetails,
+.     productCoverage, productLineMap, catalogProfile
+.     retrieveOrder <tracknum>
+.     retrieveOrders <comma sparated tracknums or filename>
+.
+. Options that apply to any group are:
+.   all        Runs all functions in the group (this is
+               the default if no functions are supplied).
+.   standalone Run in standalone mode using local test data
+.              for responses. Overrides property file setting.
+.   connected  Run in connected mode requesting responses from the
+.              AConneX Gateway. Overrides property file setting.
+.
+. Examples:
+.   runexample PartOrderManagement partInquiry partOrder standalone
+.   runexample AdminManagement all
+.   runexample PartOrderManagement retrieveOrder 123
+.   runexample PartOrderManagement retrieveOrders 123,124
+.   runexample PartOrderManagement retrieveOrders filename
+.      filename is file containing comma separted list of nums on one line
+.=================================================================

@@ -1,0 +1,16 @@
+<ACXProductCoverageRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <ReturnReceipt value='No'/>
+    <ProductCoverageRequest>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+        <LastVersion>
+          <TimeStamp></TimeStamp>
+          <FileSize></FileSize>
+        </LastVersion>
+    </ProductCoverageRequest>
+</ACXProductCoverageRequest>

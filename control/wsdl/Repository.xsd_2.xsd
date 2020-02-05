@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://repository.acxim.epicor.com/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://repository.acxim.epicor.com/datatypes">
+
+<xs:complexType name="retrieveOrder">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrderReply">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="repositoryInfoRequest">
+<xs:sequence>
+<xs:element name="Property" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="Priority" type="tns:priority" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="priority">
+<xs:sequence>
+<xs:element name="ApplicationType" type="xs:int" />
+<xs:element name="TransactionType" type="xs:int" nillable="true" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="repositoryInfoResponse">
+<xs:sequence>
+<xs:element name="PropertyReply" type="tns:propertyReply" maxOccurs="unbounded" />
+<xs:element name="PriorityReply" type="tns:priorityReply" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="propertyReply">
+<xs:sequence>
+<xs:element name="Name" type="xs:string" />
+<xs:element name="PropertyValue" type="xs:string" />
+<xs:element name="Error" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="priorityReply">
+<xs:sequence>
+<xs:element name="ApplicationType" type="xs:int" />
+<xs:element name="TransactionType" type="xs:int" />
+<xs:element name="PriorityValue" type="xs:string" />
+<xs:element name="Error" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveAllOrderDocumentsReply">
+<xs:sequence>
+<xs:element name="Documents" type="tns:acxDocument" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="acxDocument">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+<xs:element name="EventType" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrders">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveOrdersReply">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deposit">
+<xs:sequence>
+<xs:element name="Transaction" type="tns:transaction" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transaction">
+<xs:sequence>
+<xs:element name="BuyPartnerId" type="xs:string" />
+<xs:element name="SellPartnerId" type="xs:string" />
+<xs:element name="UserId" type="xs:string" nillable="true" minOccurs="0" />
+<xs:element name="AcxTrackNum" type="xs:string" />
+<xs:element name="ApplicationType" type="xs:int" />
+<xs:element name="TransType" type="xs:int" />
+<xs:element name="ReportingPartnerId" type="xs:string" />
+<xs:element name="ReturnCode" type="xs:long" />
+<xs:element name="RequestSize" type="xs:int" />
+<xs:element name="RequestItemCount" type="xs:int" />
+<xs:element name="ResponseSize" type="xs:int" />
+<xs:element name="ResponseItemCount" type="xs:int" />
+<xs:element name="Request" type="xs:string" />
+<xs:element name="Response" type="xs:string" />
+<xs:element name="OcxRequest" type="xs:string" nillable="true" minOccurs="0" />
+<xs:element name="OcxResponse" type="xs:string" nillable="true" minOccurs="0" />
+<xs:element name="TransactionStartDate" type="xs:string" />
+<xs:element name="TransactionEndDate" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="depositReply">
+<xs:sequence>
+<xs:element name="TransactionReply" type="tns:transactionReply" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionReply">
+<xs:sequence>
+<xs:element name="AcxTrackNum" type="xs:string" />
+<xs:element name="Status" type="tns:status" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="status">
+<xs:sequence>
+<xs:element name="Value" type="xs:string" />
+<xs:element name="ErrorText" type="xs:string" nillable="true" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listOrders">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listOrdersReply">
+<xs:sequence>
+<xs:element name="Data" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,38 @@
+<ACXPartInquiryRequest>
+    <Envelope>
+        <BuyPartnerID>6036530010346752</BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID>6036530000280231</SellPartnerID>
+        <CustNum>1184A</CustNum>
+        <ReturnReceipt value='No'/>        
+    </RequestRouter>
+    <PartRequestAction>
+        <AskPayForm value='No'/>
+        <AskShipList value='No'/>
+        <AskCatalog value='Yes'>
+          <LastMCLVersion>
+            <Type value='Dealer'/>
+            <TimeStamp></TimeStamp>
+            <FileSize></FileSize>
+          </LastMCLVersion>
+        </AskCatalog>
+        <ReturnAltLocInfo value='IfNotAvailable' />
+    </PartRequestAction>
+    <PartInquiryRequest>
+        <RequestItem>
+            <ID>1</ID>
+            <PartNum>51515</PartNum>
+            <BuyerDesc></BuyerDesc>
+            <MfgCode>WIX</MfgCode>
+            <Qty>1</Qty>
+            <Msg></Msg>
+            <ShipCode></ShipCode>
+            <RelCode value='Regular'/>
+            <BackOrderCode value='Cancel'/>
+            <InventoryAction value='Default'/>
+        </RequestItem>
+    </PartInquiryRequest>
+</ACXPartInquiryRequest>

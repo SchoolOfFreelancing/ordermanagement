@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://www.epicor.com/acxim/directoryservices" xmlns:ns1="http://www.epicor.com/acxim/directoryservices/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.epicor.com/acxim/directoryservices">
+
+<xs:import namespace="http://www.epicor.com/acxim/directoryservices/datatypes" schemaLocation="file:../control/wsdl/PartnerManagementService.xsd_1.xsd" />
+
+<xs:element name="ServiceFault" nillable="true" type="tns:com.epicor.acxim.directoryservices.exceptions.ServiceException" />
+
+<xs:element name="bindBrokerToGroup1" type="tns:bindBrokerToGroup1" />
+
+<xs:element name="bindBrokerToGroup1Response" type="tns:bindBrokerToGroup1Response" />
+
+<xs:element name="createPartner1" type="tns:createPartner1" />
+
+<xs:element name="createPartner1Response" type="tns:createPartner1Response" />
+
+<xs:element name="createTradingRelationship1" type="tns:createTradingRelationship1" />
+
+<xs:element name="createTradingRelationship1Response" type="tns:createTradingRelationship1Response" />
+
+<xs:element name="deleteGroup1" type="tns:deleteGroup1" />
+
+<xs:element name="deleteGroup1Response" type="tns:deleteGroup1Response" />
+
+<xs:element name="deletePartner1" type="tns:deletePartner1" />
+
+<xs:element name="deletePartner1Response" type="tns:deletePartner1Response" />
+
+<xs:element name="destroyPartner1" type="tns:destroyPartner1" />
+
+<xs:element name="destroyPartner1Response" type="tns:destroyPartner1Response" />
+
+<xs:element name="getAllPartnersForBroker1" type="tns:getAllPartnersForBroker1" />
+
+<xs:element name="getAllPartnersForBroker1Response" type="tns:getAllPartnersForBroker1Response" />
+
+<xs:element name="getAllPartnersInGroup1" type="tns:getAllPartnersInGroup1" />
+
+<xs:element name="getAllPartnersInGroup1Response" type="tns:getAllPartnersInGroup1Response" />
+
+<xs:element name="isPartnerValid1" type="tns:isPartnerValid1" />
+
+<xs:element name="isPartnerValid1Response" type="tns:isPartnerValid1Response" />
+
+<xs:element name="isTradingRelationshipValid1" type="tns:isTradingRelationshipValid1" />
+
+<xs:element name="isTradingRelationshipValid1Response" type="tns:isTradingRelationshipValid1Response" />
+
+<xs:element name="listPartners1" type="tns:listPartners1" />
+
+<xs:element name="listPartners1Response" type="tns:listPartners1Response" />
+
+<xs:element name="listTradingRelationships1" type="tns:listTradingRelationships1" />
+
+<xs:element name="listTradingRelationships1Response" type="tns:listTradingRelationships1Response" />
+
+<xs:element name="nodeExists1" type="tns:nodeExists1" />
+
+<xs:element name="nodeExists1Response" type="tns:nodeExists1Response" />
+
+<xs:element name="password" nillable="true" type="xs:string" />
+
+<xs:element name="removeTradingRelationship1" type="tns:removeTradingRelationship1" />
+
+<xs:element name="removeTradingRelationship1Response" type="tns:removeTradingRelationship1Response" />
+
+<xs:element name="retrieveGroupPartners1" type="tns:retrieveGroupPartners1" />
+
+<xs:element name="retrieveGroupPartners1Response" type="tns:retrieveGroupPartners1Response" />
+
+<xs:element name="retrieveLegalAgreement1" type="tns:retrieveLegalAgreement1" />
+
+<xs:element name="retrieveLegalAgreement1Response" type="tns:retrieveLegalAgreement1Response" />
+
+<xs:element name="retrievePartner1" type="tns:retrievePartner1" />
+
+<xs:element name="retrievePartner1Response" type="tns:retrievePartner1Response" />
+
+<xs:element name="retrieveTradingRelationship1" type="tns:retrieveTradingRelationship1" />
+
+<xs:element name="retrieveTradingRelationship1Response" type="tns:retrieveTradingRelationship1Response" />
+
+<xs:element name="updatePartner1" type="tns:updatePartner1" />
+
+<xs:element name="updatePartner1Response" type="tns:updatePartner1Response" />
+
+<xs:element name="updateTradingRelationship1" type="tns:updateTradingRelationship1" />
+
+<xs:element name="updateTradingRelationship1Response" type="tns:updateTradingRelationship1Response" />
+
+<xs:element name="username" nillable="true" type="xs:string" />
+
+<xs:complexType name="listTradingRelationships1">
+<xs:sequence>
+<xs:element name="tradingRelationshipListRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listTradingRelationships1Response">
+<xs:sequence>
+<xs:element name="tradingRelationshipReply" type="ns1:tradingRelationshipListReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.NotificationResponseException">
+<xs:sequence>
+<xs:element name="acxNotificationResponse" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.ServiceException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveLegalAgreement1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="retrieveLegalAgreement1Response">
+<xs:sequence>
+<xs:element name="legalAgreement" type="ns1:legalAgreement" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePartner1">
+<xs:sequence>
+<xs:element name="updateRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePartner1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isPartnerValid1">
+<xs:sequence>
+<xs:element name="partnerValidRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isPartnerValid1Response">
+<xs:sequence>
+<xs:element name="partnerValidReply" type="ns1:partnerValidReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveTradingRelationship1">
+<xs:sequence>
+<xs:element name="tradingRelationshipRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveTradingRelationship1Response">
+<xs:sequence>
+<xs:element name="tradingRelationshipReply" type="ns1:tradingRelationshipReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPartnersInGroup1">
+<xs:sequence>
+<xs:element name="groupName" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPartnersInGroup1Response">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeTradingRelationship1">
+<xs:sequence>
+<xs:element name="tradingRelationshipRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeTradingRelationship1Response">
+<xs:sequence>
+<xs:element name="return" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destroyPartner1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="groupID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destroyPartner1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTradingRelationship1">
+<xs:sequence>
+<xs:element name="tradingRelationshipRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTradingRelationship1Response">
+<xs:sequence>
+<xs:element name="return" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nodeExists1">
+<xs:sequence>
+<xs:element name="nodeID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nodeExists1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createPartner1">
+<xs:sequence>
+<xs:element name="sendIP" type="xs:boolean" />
+<xs:element name="creationRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createPartner1Response">
+<xs:sequence>
+<xs:element name="creationReply" type="ns1:creationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveGroupPartners1">
+<xs:sequence>
+<xs:element name="groupPartnersRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveGroupPartners1Response">
+<xs:sequence>
+<xs:element name="groupPartnersReply" type="ns1:groupPartnersReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isTradingRelationshipValid1">
+<xs:sequence>
+<xs:element name="validationRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isTradingRelationshipValid1Response">
+<xs:sequence>
+<xs:element name="tradingRelationshipValidReply" type="ns1:tradingRelationshipValidReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrievePartner1">
+<xs:sequence>
+<xs:element name="partnerRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrievePartner1Response">
+<xs:sequence>
+<xs:element name="retrievePartnerReply" type="ns1:retrievePartnerReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bindBrokerToGroup1">
+<xs:sequence>
+<xs:element name="groupId" type="xs:string" />
+<xs:element name="groupUsername" type="xs:string" />
+<xs:element name="groupPassword" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bindBrokerToGroup1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listPartners1">
+<xs:sequence>
+<xs:element name="partnersRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listPartners1Response">
+<xs:sequence>
+<xs:element name="partnersListReply" type="ns1:partnersListReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePartner1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePartner1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPartnersForBroker1">
+<xs:sequence>
+<xs:element name="brokerID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPartnersForBroker1Response">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGroup1">
+<xs:sequence>
+<xs:element name="groupID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGroup1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTradingRelationship1">
+<xs:sequence>
+<xs:element name="tradingRelationshipRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTradingRelationship1Response">
+<xs:sequence>
+<xs:element name="return" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

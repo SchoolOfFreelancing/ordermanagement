@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<s0:definitions name="PartOrderMgrDefinitions" targetNamespace="http://com/activant/web/services/partorder" xmlns="" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://com/activant/web/services/partorder" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://com/activant/web/services/partorder" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="metadata1TYPE">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="timeout" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="1" name="ACXTrackNum" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:element name="Credentials">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="Token" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="1" name="TokenSignature" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="myFaultTYPE">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="acxNotificationResponse" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="invoiceRequest1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="invoiceRequest1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listOrders1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listOrders1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="queryParts1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryParts1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="queryPartsInCart1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryPartsInCart1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="queryTires1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryTires1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="orderParts1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="orderParts1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="orderTires1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="orderTires1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="returnParts1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="returnParts1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="orderStock1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="orderStock1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveOrder1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveOrder1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveOrders1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveOrders1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveProductCoverage1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveProductCoverage1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveProductLineMap1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveProductLineMap1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="updateCatalogProfile1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateCatalogProfile1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveNewPasswords1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveNewPasswords1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+
+    </xs:schema>
+  </s0:types>
+  <s0:message name="invoiceRequest1RequestMSG">
+    <s0:part element="s1:invoiceRequest1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="invoiceRequest1ResponseMSG">
+    <s0:part element="s1:invoiceRequest1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listOrders1RequestMSG">
+    <s0:part element="s1:listOrders1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listOrders1ResponseMSG">
+    <s0:part element="s1:listOrders1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="queryParts1RequestMSG">
+    <s0:part element="s1:queryParts1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="queryParts1ResponseMSG">
+    <s0:part element="s1:queryParts1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="queryPartsInCart1RequestMSG">
+    <s0:part element="s1:queryPartsInCart1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="queryPartsInCart1ResponseMSG">
+    <s0:part element="s1:queryPartsInCart1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="queryTires1RequestMSG">
+    <s0:part element="s1:queryTires1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="queryTires1ResponseMSG">
+    <s0:part element="s1:queryTires1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="orderParts1RequestMSG">
+    <s0:part element="s1:orderParts1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="orderParts1ResponseMSG">
+    <s0:part element="s1:orderParts1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="orderTires1RequestMSG">
+    <s0:part element="s1:orderTires1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="orderTires1ResponseMSG">
+    <s0:part element="s1:orderTires1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="returnParts1RequestMSG">
+    <s0:part element="s1:returnParts1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="returnParts1ResponseMSG">
+    <s0:part element="s1:returnParts1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="orderStock1RequestMSG">
+    <s0:part element="s1:orderStock1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="orderStock1ResponseMSG">
+    <s0:part element="s1:orderStock1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveOrder1RequestMSG">
+    <s0:part element="s1:retrieveOrder1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveOrder1ResponseMSG">
+    <s0:part element="s1:retrieveOrder1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveOrders1RequestMSG">
+    <s0:part element="s1:retrieveOrders1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveOrders1ResponseMSG">
+    <s0:part element="s1:retrieveOrders1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveProductCoverage1RequestMSG">
+    <s0:part element="s1:retrieveProductCoverage1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveProductCoverage1ResponseMSG">
+    <s0:part element="s1:retrieveProductCoverage1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveProductLineMap1RequestMSG">
+    <s0:part element="s1:retrieveProductLineMap1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveProductLineMap1ResponseMSG">
+    <s0:part element="s1:retrieveProductLineMap1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="updateCatalogProfile1RequestMSG">
+    <s0:part element="s1:updateCatalogProfile1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="updateCatalogProfile1ResponseMSG">
+    <s0:part element="s1:updateCatalogProfile1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveNewPasswords1RequestMSG">
+    <s0:part element="s1:retrieveNewPasswords1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveNewPasswords1ResponseMSG">
+    <s0:part element="s1:retrieveNewPasswords1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:portType name="PartOrderMgr">
+    <s0:operation name="invoiceRequest1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:invoiceRequest1RequestMSG"/>
+      <s0:output message="s1:invoiceRequest1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listOrders1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listOrders1RequestMSG"/>
+      <s0:output message="s1:listOrders1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="queryParts1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:queryParts1RequestMSG"/>
+      <s0:output message="s1:queryParts1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="queryPartsInCart1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:queryPartsInCart1RequestMSG"/>
+      <s0:output message="s1:queryPartsInCart1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="queryTires1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:queryTires1RequestMSG"/>
+      <s0:output message="s1:queryTires1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="orderParts1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:orderParts1RequestMSG"/>
+      <s0:output message="s1:orderParts1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="orderTires1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:orderTires1RequestMSG"/>
+      <s0:output message="s1:orderTires1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="returnParts1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:returnParts1RequestMSG"/>
+      <s0:output message="s1:returnParts1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="orderStock1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:orderStock1RequestMSG"/>
+      <s0:output message="s1:orderStock1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveOrder1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveOrder1RequestMSG"/>
+      <s0:output message="s1:retrieveOrder1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveOrders1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveOrders1RequestMSG"/>
+      <s0:output message="s1:retrieveOrders1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveProductCoverage1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveProductCoverage1RequestMSG"/>
+      <s0:output message="s1:retrieveProductCoverage1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveProductLineMap1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveProductLineMap1RequestMSG"/>
+      <s0:output message="s1:retrieveProductLineMap1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="updateCatalogProfile1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:updateCatalogProfile1RequestMSG"/>
+      <s0:output message="s1:updateCatalogProfile1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveNewPasswords1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveNewPasswords1RequestMSG"/>
+      <s0:output message="s1:retrieveNewPasswords1ResponseMSG"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="PartOrderMgrSoapBinding" type="s1:PartOrderMgr">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="invoiceRequest1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:invoiceRequest1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listOrders1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listOrders1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="queryParts1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:queryParts1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="queryPartsInCart1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:queryPartsInCart1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="queryTires1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:queryTires1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="orderParts1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:orderParts1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="orderTires1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:orderTires1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="returnParts1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:returnParts1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="orderStock1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:orderStock1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveOrder1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveOrder1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveOrders1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveOrders1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveProductCoverage1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveProductCoverage1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveProductLineMap1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveProductLineMap1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="updateCatalogProfile1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:updateCatalogProfile1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveNewPasswords1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveNewPasswords1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="PartOrderMgr">
+    <s0:port binding="s1:PartOrderMgrSoapBinding" name="PartOrderMgrPort">
+      <s2:address location="http://localhost:8080/acximservice/PartOrderMgr"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

@@ -1,0 +1,21 @@
+<ACXOrderHistoryRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <OrderHistory>
+        <SellPartnerID></SellPartnerID>
+        <BeginDate></BeginDate>
+        <EndDate></EndDate>
+        <BuyPartnerOptions value='BuyPartnerIDOnly' />
+        <SellPartnerOptions value='SellPartnerIDOnly' />
+        <ResponseOptions>
+          <TransactionDetail value='TransactionID' />
+          <GroupBy value='None' />
+          <SortBy value='TransactionID' />
+        </ResponseOptions>
+        <IncludedResponses value='All' />
+        <IncludedRequestType value='All' />
+    </OrderHistory>
+</ACXOrderHistoryRequest>

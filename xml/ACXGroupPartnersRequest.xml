@@ -1,0 +1,16 @@
+<ACXGroupPartnersRequest>
+  <Envelope>
+    <BuyPartnerID></BuyPartnerID>
+    <DocVersNum>1.0</DocVersNum>
+    <DocGenBy>ACX SDK Example Program</DocGenBy>  
+  </Envelope>
+  <GroupRequestInfo>
+    <GroupPartnerID></GroupPartnerID>
+    <GroupID></GroupID>
+    <GroupType>
+      <GroupTypeNumber></GroupTypeNumber>
+      <GroupTypeName></GroupTypeName>
+    </GroupType>
+  </GroupRequestInfo>
+</ACXGroupPartnersRequest>
+

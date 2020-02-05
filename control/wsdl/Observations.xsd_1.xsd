@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:ns1="http://observations.acxim.epicor.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.aconnex.com/faults">
+
+<xs:import namespace="http://observations.acxim.epicor.com/" schemaLocation="file:../control/wsdl/Observations.xsd_2.xsd" />
+
+<xs:element name="ServiceExceptionFault" type="ns1:com.epicor.acxim.directoryservices.exceptions.ServiceException" />
+
+<xs:element name="notificationResponse" nillable="true" type="ns1:com.epicor.acxim.directoryservices.exceptions.NotificationResponseException" />
+
+</xs:schema>

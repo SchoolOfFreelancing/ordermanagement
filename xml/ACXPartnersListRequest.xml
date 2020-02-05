@@ -1,0 +1,16 @@
+<ACXPartnersListRequest>
+  <Envelope>
+    <BuyPartnerID></BuyPartnerID>
+    <DocVersNum>1.0</DocVersNum>
+    <DocGenBy>ACX SDK Example Program</DocGenBy>  
+  </Envelope>
+  <Filter>
+    <Name></Name>
+    <City></City>
+    <State></State>
+    <PostalID></PostalID>
+    <Phone></Phone>
+  </Filter>
+  <ReturnExtendedInfo value='No' />
+</ACXPartnersListRequest>
+

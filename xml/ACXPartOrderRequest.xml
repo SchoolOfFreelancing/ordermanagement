@@ -1,0 +1,48 @@
+<ACXPartOrderRequest>
+    <Envelope>
+        <BuyPartnerID>6036530010346752</BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID>6036530000280231</SellPartnerID>
+        <CustNum></CustNum>
+        <ReturnReceipt value='No'/>   
+        <InquiryReference></InquiryReference>     
+    </RequestRouter>
+    <PartRequestAction>
+        <AskPayForm value='No'/>
+        <AskShipList value='No'/>
+        <AskCatalog value='Yes'>
+          <LastMCLVersion>
+            <Type value='Dealer'/>
+            <TimeStamp></TimeStamp>
+            <FileSize></FileSize>
+          </LastMCLVersion>
+        </AskCatalog>
+        <ReturnAltLocInfo value='IfNotAvailable' />
+    </PartRequestAction>
+    <PartOrderRequest>
+        <RequestItem>
+            <ID></ID>
+            <PartNum></PartNum>
+            <BuyerDesc></BuyerDesc>
+            <MfgCode></MfgCode>
+            <Qty></Qty>
+            <Msg></Msg>
+            <ShipCode></ShipCode>
+            <RelCode value='Regular'/>
+            <BackOrderCode value='Cancel'/>
+            <InventoryAction value='Default'/>
+        </RequestItem>
+    <RequestOrder>
+        <UseDefaultAddressFlag value='Yes' />
+        <OrderMsg></OrderMsg>
+        <FOP></FOP>
+        <PONumber></PONumber>
+        <AllowPartialFill  value='No' />
+        <OrderReleaseType  value='Default' />
+    </RequestOrder>
+    </PartOrderRequest>
+</ACXPartOrderRequest>
+

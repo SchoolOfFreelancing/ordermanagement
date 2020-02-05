@@ -1,0 +1,19 @@
+<ACXInvoiceRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+    </RequestRouter>
+    <InvoiceRequest>
+        <RequestItem>
+            <ID></ID>
+            <ItemType value="Get"/>
+            <PONumber></PONumber>
+            <BuyerName></BuyerName>
+        </RequestItem>
+    </InvoiceRequest>
+</ACXInvoiceRequest>

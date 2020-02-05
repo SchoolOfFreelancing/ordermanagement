@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://observations.aconnex.com/observations/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://observations.aconnex.com/observations/datatypes">
+
+<xs:complexType name="observation">
+<xs:sequence>
+<xs:element name="ObsItemList" type="tns:observationItem" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="observationItem">
+<xs:sequence>
+<xs:element name="ItemId" type="xs:int" />
+<xs:element name="Message" type="xs:string" />
+<xs:element name="ObservationDate" type="xs:string" />
+<xs:element name="ReportedAbout" type="tns:reportedAbout" />
+<xs:element name="ReportedBy" type="tns:reportedBy" />
+<xs:element name="ReturnCode" type="xs:int" />
+<xs:element name="TransactionInfo" type="tns:transactionInfo" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportedAbout">
+<xs:sequence>
+<xs:element name="PartnerId" type="xs:string" />
+<xs:element name="SystemId" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportedBy">
+<xs:sequence>
+<xs:element name="PartnerId" type="xs:string" />
+<xs:element name="SystemId" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionInfo">
+<xs:sequence>
+<xs:element name="AcxTrackNum" type="xs:string" />
+<xs:element name="Duration" type="xs:long" nillable="true" />
+<xs:element name="ItemCount" type="xs:short" nillable="true" />
+<xs:element name="RequestSize" type="xs:int" />
+<xs:element name="ResponseSize" type="xs:int" />
+<xs:element name="SoftwareVersion" type="xs:string" nillable="true" minOccurs="0" />
+<xs:element name="TransactionDate" type="xs:string" />
+<xs:element name="TransactionType" type="xs:short" nillable="true" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="observationReply">
+<xs:sequence>
+<xs:element name="ObservationReplyItem" type="tns:observationReplyItem" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="observationReplyItem">
+<xs:sequence>
+<xs:element name="ItemId" type="xs:int" />
+<xs:element name="Status" type="tns:status" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="status">
+<xs:sequence>
+<xs:element name="ErrorText" type="xs:string" nillable="true" minOccurs="0" />
+<xs:element name="Value" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

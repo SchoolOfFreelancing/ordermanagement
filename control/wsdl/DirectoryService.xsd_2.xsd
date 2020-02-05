@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://www.aconnex.com/services/directoryservices" xmlns:ns2="http://repository.acxim.epicor.com/datatypes" xmlns:ns1="http://www.epicor.com/acxim/directoryservices/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://www.aconnex.com/services/directoryservices">
+
+<xs:import namespace="http://www.epicor.com/acxim/directoryservices/datatypes" schemaLocation="file:../control/wsdl/DirectoryService.xsd_1.xsd" />
+
+<xs:import namespace="http://repository.acxim.epicor.com/datatypes" schemaLocation="file:../control/wsdl/DirectoryService.xsd_4.xsd" />
+
+<xs:element name="ServiceFault" nillable="true" type="tns:com.epicor.acxim.directoryservices.exceptions.ServiceException" />
+
+<xs:element name="addAccessRules1" type="tns:addAccessRules1" />
+
+<xs:element name="addAccessRules1Response" type="tns:addAccessRules1Response" />
+
+<xs:element name="canBuyOnBehalfOf1" type="tns:canBuyOnBehalfOf1" />
+
+<xs:element name="canBuyOnBehalfOf1Response" type="tns:canBuyOnBehalfOf1Response" />
+
+<xs:element name="deleteAccessRules1" type="tns:deleteAccessRules1" />
+
+<xs:element name="deleteAccessRules1Response" type="tns:deleteAccessRules1Response" />
+
+<xs:element name="findAffiliates1" type="tns:findAffiliates1" />
+
+<xs:element name="findAffiliates1Response" type="tns:findAffiliates1Response" />
+
+<xs:element name="getAccessRules1" type="tns:getAccessRules1" />
+
+<xs:element name="getAccessRules1Response" type="tns:getAccessRules1Response" />
+
+<xs:element name="getAccessRulesWithName1" type="tns:getAccessRulesWithName1" />
+
+<xs:element name="getAccessRulesWithName1Response" type="tns:getAccessRulesWithName1Response" />
+
+<xs:element name="getApfOnlineStatus1" type="tns:getApfOnlineStatus1" />
+
+<xs:element name="getApfOnlineStatus1Response" type="tns:getApfOnlineStatus1Response" />
+
+<xs:element name="getApfSellerKeys1" type="tns:getApfSellerKeys1" />
+
+<xs:element name="getApfSellerKeys1Response" type="tns:getApfSellerKeys1Response" />
+
+<xs:element name="getConnectionInfo1" type="tns:getConnectionInfo1" />
+
+<xs:element name="getConnectionInfo1Response" type="tns:getConnectionInfo1Response" />
+
+<xs:element name="getConnectionInfo2" type="tns:getConnectionInfo2" />
+
+<xs:element name="getConnectionInfo2Response" type="tns:getConnectionInfo2Response" />
+
+<xs:element name="getConnectionInfo3" type="tns:getConnectionInfo3" />
+
+<xs:element name="getConnectionInfo3Response" type="tns:getConnectionInfo3Response" />
+
+<xs:element name="getConnectionInfoInternal1" type="tns:getConnectionInfoInternal1" />
+
+<xs:element name="getConnectionInfoInternal1Response" type="tns:getConnectionInfoInternal1Response" />
+
+<xs:element name="getConnectionInfoInternal2" type="tns:getConnectionInfoInternal2" />
+
+<xs:element name="getConnectionInfoInternal2Response" type="tns:getConnectionInfoInternal2Response" />
+
+<xs:element name="getCountries1" type="tns:getCountries1" />
+
+<xs:element name="getCountries1Response" type="tns:getCountries1Response" />
+
+<xs:element name="getGatewayTypes1" type="tns:getGatewayTypes1" />
+
+<xs:element name="getGatewayTypes1Response" type="tns:getGatewayTypes1Response" />
+
+<xs:element name="getOptions1" type="tns:getOptions1" />
+
+<xs:element name="getOptions1Response" type="tns:getOptions1Response" />
+
+<xs:element name="getRepositoryInfo1" type="tns:getRepositoryInfo1" />
+
+<xs:element name="getRepositoryInfo1Response" type="tns:getRepositoryInfo1Response" />
+
+<xs:element name="getServerInfoChangedDate1" type="tns:getServerInfoChangedDate1" />
+
+<xs:element name="getServerInfoChangedDate1Response" type="tns:getServerInfoChangedDate1Response" />
+
+<xs:element name="getServiceInfo1" type="tns:getServiceInfo1" />
+
+<xs:element name="getServiceInfo1Response" type="tns:getServiceInfo1Response" />
+
+<xs:element name="getServiceInfo2" type="tns:getServiceInfo2" />
+
+<xs:element name="getServiceInfo2Response" type="tns:getServiceInfo2Response" />
+
+<xs:element name="listApplicationServices1" type="tns:listApplicationServices1" />
+
+<xs:element name="listApplicationServices1Response" type="tns:listApplicationServices1Response" />
+
+<xs:element name="listBusinessSystemProviders1" type="tns:listBusinessSystemProviders1" />
+
+<xs:element name="listBusinessSystemProviders1Response" type="tns:listBusinessSystemProviders1Response" />
+
+<xs:element name="listMemberAffiliations1" type="tns:listMemberAffiliations1" />
+
+<xs:element name="listMemberAffiliations1Response" type="tns:listMemberAffiliations1Response" />
+
+<xs:element name="listPartnerTypes1" type="tns:listPartnerTypes1" />
+
+<xs:element name="listPartnerTypes1Response" type="tns:listPartnerTypes1Response" />
+
+<xs:element name="listStaticAssociations1" type="tns:listStaticAssociations1" />
+
+<xs:element name="listStaticAssociations1Response" type="tns:listStaticAssociations1Response" />
+
+<xs:element name="password" nillable="true" type="xs:string" />
+
+<xs:element name="setAllApfNodesOfflineForIP1" type="tns:setAllApfNodesOfflineForIP1" />
+
+<xs:element name="setAllApfNodesOfflineForIP1Response" type="tns:setAllApfNodesOfflineForIP1Response" />
+
+<xs:element name="setNodeOffline1" type="tns:setNodeOffline1" />
+
+<xs:element name="setNodeOffline1Response" type="tns:setNodeOffline1Response" />
+
+<xs:element name="setNodeOnline1" type="tns:setNodeOnline1" />
+
+<xs:element name="setNodeOnline1Response" type="tns:setNodeOnline1Response" />
+
+<xs:element name="updateApfOnlineStatus1" type="tns:updateApfOnlineStatus1" />
+
+<xs:element name="updateApfOnlineStatus1Response" type="tns:updateApfOnlineStatus1Response" />
+
+<xs:element name="updateApfSellerKeys1" type="tns:updateApfSellerKeys1" />
+
+<xs:element name="updateApfSellerKeys1Response" type="tns:updateApfSellerKeys1Response" />
+
+<xs:element name="updateConnection1" type="tns:updateConnection1" />
+
+<xs:element name="updateConnection1Response" type="tns:updateConnection1Response" />
+
+<xs:element name="updateConnection2" type="tns:updateConnection2" />
+
+<xs:element name="updateConnection2Response" type="tns:updateConnection2Response" />
+
+<xs:element name="updateConnectionFull1" type="tns:updateConnectionFull1" />
+
+<xs:element name="updateConnectionFull1Response" type="tns:updateConnectionFull1Response" />
+
+<xs:element name="updateConnectionFull2" type="tns:updateConnectionFull2" />
+
+<xs:element name="updateConnectionFull2Response" type="tns:updateConnectionFull2Response" />
+
+<xs:element name="username" nillable="true" type="xs:string" />
+
+<xs:element name="verifyUser1" type="tns:verifyUser1" />
+
+<xs:element name="verifyUser1Response" type="tns:verifyUser1Response" />
+
+<xs:complexType name="getConnectionInfo2">
+<xs:sequence>
+<xs:element name="username" type="xs:string" />
+<xs:element name="password" type="xs:string" />
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="requestedPartnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfo2Response">
+<xs:sequence>
+<xs:element name="connectionInfo" type="ns1:connectionInfo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.NotificationResponseException">
+<xs:sequence>
+<xs:element name="acxNotificationResponse" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="com.epicor.acxim.directoryservices.exceptions.ServiceException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfo3">
+<xs:sequence>
+<xs:element name="username" type="xs:string" />
+<xs:element name="password" type="xs:string" />
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="requestedPartnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+<xs:element name="useHTTPS" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfo3Response">
+<xs:sequence>
+<xs:element name="connectionInfo" type="ns1:connectionInfo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnectionFull2">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" />
+<xs:element name="protocol" type="xs:string" />
+<xs:element name="hostname" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+<xs:element name="path" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+<xs:element name="internalIP" type="xs:string" />
+<xs:element name="internalPort" type="xs:int" />
+<xs:element name="supportsHTTPS" type="xs:string" />
+<xs:element name="httpsHostname" type="xs:string" />
+<xs:element name="httpsPort" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnectionFull2Response">
+<xs:sequence>
+<xs:element name="updateConnectionReply" type="ns1:updateConnectionReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getServerInfoChangedDate1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getServerInfoChangedDate1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getServiceInfo1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getServiceInfo1Response">
+<xs:sequence>
+<xs:element name="serviceInfoReply" type="ns1:serviceInfoReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listBusinessSystemProviders1">
+<xs:sequence>
+<xs:element name="businessSystemProvidersRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listBusinessSystemProviders1Response">
+<xs:sequence>
+<xs:element name="businessSystemProvidersReply" type="ns1:businessSystemProvidersReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listApplicationServices1">
+<xs:sequence>
+<xs:element name="applicationServicesRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listApplicationServices1Response">
+<xs:sequence>
+<xs:element name="applicationServicesReply" type="ns1:applicationServicesReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNodeOnline1">
+<xs:sequence>
+<xs:element name="nodeID" type="xs:string" />
+<xs:element name="ip" type="xs:string" />
+<xs:element name="port" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNodeOnline1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listPartnerTypes1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listPartnerTypes1Response">
+<xs:sequence>
+<xs:element name="partnerTypesReply" type="ns1:partnerTypesReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAllApfNodesOfflineForIP1">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAllApfNodesOfflineForIP1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="setNodeOffline1">
+<xs:sequence>
+<xs:element name="nodeID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setNodeOffline1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="deleteAccessRules1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="accessRule" type="ns1:accessRule" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAccessRules1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyUser1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="verifyUser1Response">
+<xs:sequence>
+<xs:element name="VerifyUserReply" type="ns1:verifyUserReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfo1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="requestedPartnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfo1Response">
+<xs:sequence>
+<xs:element name="connectionInfo" type="ns1:connectionInfo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnection1">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" />
+<xs:element name="protocol" type="xs:string" />
+<xs:element name="hostname" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+<xs:element name="path" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnection1Response">
+<xs:sequence>
+<xs:element name="updateConnectionReply" type="ns1:updateConnectionReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnection2">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" />
+<xs:element name="protocol" type="xs:string" />
+<xs:element name="hostname" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+<xs:element name="path" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+<xs:element name="supportsHTTPS" type="xs:string" />
+<xs:element name="httpsHostname" type="xs:string" />
+<xs:element name="httpsPort" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnection2Response">
+<xs:sequence>
+<xs:element name="updateConnectionReply" type="ns1:updateConnectionReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApfSellerKeys1">
+<xs:sequence>
+<xs:element name="groupID" type="xs:integer" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApfSellerKeys1Response">
+<xs:sequence>
+<xs:element name="return" type="ns1:apfKeyPair" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfoInternal2">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="requestedPartnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+<xs:element name="useHTTPS" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfoInternal2Response">
+<xs:sequence>
+<xs:element name="connectionInfo" type="ns1:connectionInfoFull" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfoInternal1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="requestedPartnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConnectionInfoInternal1Response">
+<xs:sequence>
+<xs:element name="connectionInfo" type="ns1:connectionInfoFull" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getOptions1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getOptions1Response">
+<xs:sequence>
+<xs:element name="GetOptionsReply" type="ns1:getOptionsReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateApfSellerKeys1">
+<xs:sequence>
+<xs:element name="groupId" type="xs:integer" />
+<xs:element name="nodeId" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+<xs:element name="privKey" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateApfSellerKeys1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getRepositoryInfo1">
+<xs:sequence>
+<xs:element name="RepositoryInfoRequest" type="ns2:repositoryInfoRequest" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRepositoryInfo1Response">
+<xs:sequence>
+<xs:element name="RepositoryInfoResponse" type="ns2:repositoryInfoResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCountries1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getCountries1Response">
+<xs:sequence>
+<xs:element name="CountryList" type="ns1:country" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessRules1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessRules1Response">
+<xs:sequence>
+<xs:element name="accessRulesReply" type="ns1:accessRulesReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApfOnlineStatus1">
+<xs:sequence>
+<xs:element name="groupID" type="xs:integer" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApfOnlineStatus1Response">
+<xs:sequence>
+<xs:element name="return" type="ns1:apfOnlineStatus" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateApfOnlineStatus1">
+<xs:sequence>
+<xs:element name="groupId" type="xs:integer" />
+<xs:element name="nodeId" type="xs:string" />
+<xs:element name="ipAddress" type="xs:string" />
+<xs:element name="mqIpAddress" type="xs:string" />
+<xs:element name="onlineStatus" type="xs:boolean" />
+<xs:element name="connectionId" type="xs:string" />
+<xs:element name="dateConnected" type="xs:dateTime" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateApfOnlineStatus1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getServiceInfo2">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="sendIP" type="xs:boolean" />
+<xs:element name="useHTTPS" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getServiceInfo2Response">
+<xs:sequence>
+<xs:element name="serviceInfoReply2" type="ns1:serviceInfoReply2" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessRulesWithName1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessRulesWithName1Response">
+<xs:sequence>
+<xs:element name="accessRulesWithNameReply" type="tns:accessRulesWithNameReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessRulesWithNameReply">
+<xs:sequence>
+<xs:element name="accessRuleWithName" type="ns1:accessRuleWithName" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAccessRules1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="accessRule" type="ns1:accessRule" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAccessRules1Response">
+<xs:sequence>
+<xs:element name="notificationReply" type="ns1:notificationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGatewayTypes1">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getGatewayTypes1Response">
+<xs:sequence>
+<xs:element name="GatewayList" type="ns1:gateway" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listMemberAffiliations1">
+<xs:sequence>
+<xs:element name="memberAffiliationRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listMemberAffiliations1Response">
+<xs:sequence>
+<xs:element name="memberAffiliationReply" type="ns1:memberAffiliationReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAffiliates1">
+<xs:sequence>
+<xs:element name="associationType" type="xs:short" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAffiliates1Response">
+<xs:sequence>
+<xs:element name="AffiliationList" type="ns1:memberAffiliation" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listStaticAssociations1">
+<xs:sequence>
+<xs:element name="staticAssociationsRequest" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listStaticAssociations1Response">
+<xs:sequence>
+<xs:element name="staticAssociationsReply" type="ns1:staticAssociationsReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnectionFull1">
+<xs:sequence>
+<xs:element name="partnersList" type="ns1:partnersList" />
+<xs:element name="protocol" type="xs:string" />
+<xs:element name="hostname" type="xs:string" />
+<xs:element name="port" type="xs:int" />
+<xs:element name="path" type="xs:string" />
+<xs:element name="pubKey" type="xs:string" />
+<xs:element name="internalIP" type="xs:string" />
+<xs:element name="internalPort" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateConnectionFull1Response">
+<xs:sequence>
+<xs:element name="updateConnectionReply" type="ns1:updateConnectionReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="canBuyOnBehalfOf1">
+<xs:sequence>
+<xs:element name="partnerID" type="xs:string" />
+<xs:element name="buyingPartnerID" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="canBuyOnBehalfOf1Response">
+<xs:sequence>
+<xs:element name="buyOnBehalfOfReply" type="ns1:buyOnBehalfOfReply" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

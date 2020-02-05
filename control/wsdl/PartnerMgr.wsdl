@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<s0:definitions name="PartnerMgrDefinitions" targetNamespace="http://com/activant/web/services/partner" xmlns="" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://com/activant/web/services/partner" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://com/activant/web/services/partner" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="metadata1TYPE">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="timeout" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="1" name="ACXTrackNum" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:element name="Credentials">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="Token" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="1" name="TokenSignature" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="myFaultTYPE">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="acxNotificationResponse" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="CreatePartner1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreatePartner1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="CreateTradingRelationship1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateTradingRelationship1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="isPartnerValid1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="isPartnerValid1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="isTradingRelationshipValid1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="isTradingRelationshipValid1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listPartners1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listPartners1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listTradingRelationships1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listTradingRelationships1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="removeTradingRelationship1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="removeTradingRelationship1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveGroupPartners1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveGroupPartners1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrievePartner1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrievePartner1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrievePartnerStatus1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrievePartnerStatus1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveTradingRelationship1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveTradingRelationship1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="updatePartner1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updatePartner1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="updateTradingRelationship1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateTradingRelationship1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:schema>
+  </s0:types>
+
+  <s0:message name="CreatePartner1RequestMSG">
+    <s0:part element="s1:CreatePartner1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="CreatePartner1ResponseMSG">
+    <s0:part element="s1:CreatePartner1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="CreateTradingRelationship1RequestMSG">
+    <s0:part element="s1:CreateTradingRelationship1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="CreateTradingRelationship1ResponseMSG">
+    <s0:part element="s1:CreateTradingRelationship1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="isPartnerValid1RequestMSG">
+    <s0:part element="s1:isPartnerValid1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="isPartnerValid1ResponseMSG">
+    <s0:part element="s1:isPartnerValid1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="isTradingRelationshipValid1RequestMSG">
+    <s0:part element="s1:isTradingRelationshipValid1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="isTradingRelationshipValid1ResponseMSG">
+    <s0:part element="s1:isTradingRelationshipValid1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listPartners1RequestMSG">
+    <s0:part element="s1:listPartners1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listPartners1ResponseMSG">
+    <s0:part element="s1:listPartners1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listTradingRelationships1RequestMSG">
+    <s0:part element="s1:listTradingRelationships1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listTradingRelationships1ResponseMSG">
+    <s0:part element="s1:listTradingRelationships1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="removeTradingRelationship1RequestMSG">
+    <s0:part element="s1:removeTradingRelationship1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="removeTradingRelationship1ResponseMSG">
+    <s0:part element="s1:removeTradingRelationship1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveGroupPartners1RequestMSG">
+    <s0:part element="s1:retrieveGroupPartners1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveGroupPartners1ResponseMSG">
+    <s0:part element="s1:retrieveGroupPartners1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrievePartner1RequestMSG">
+    <s0:part element="s1:retrievePartner1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrievePartner1ResponseMSG">
+    <s0:part element="s1:retrievePartner1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrievePartnerStatus1RequestMSG">
+    <s0:part element="s1:retrievePartnerStatus1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrievePartnerStatus1ResponseMSG">
+    <s0:part element="s1:retrievePartnerStatus1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveTradingRelationship1RequestMSG">
+    <s0:part element="s1:retrieveTradingRelationship1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveTradingRelationship1ResponseMSG">
+    <s0:part element="s1:retrieveTradingRelationship1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="updatePartner1RequestMSG">
+    <s0:part element="s1:updatePartner1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="updatePartner1ResponseMSG">
+    <s0:part element="s1:updatePartner1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="updateTradingRelationship1RequestMSG">
+    <s0:part element="s1:updateTradingRelationship1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="updateTradingRelationship1ResponseMSG">
+    <s0:part element="s1:updateTradingRelationship1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:portType name="PartnerMgr">
+    <s0:operation name="CreatePartner1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:CreatePartner1RequestMSG"/>
+      <s0:output message="s1:CreatePartner1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="CreateTradingRelationship1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:CreateTradingRelationship1RequestMSG"/>
+      <s0:output message="s1:CreateTradingRelationship1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="isPartnerValid1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:isPartnerValid1RequestMSG"/>
+      <s0:output message="s1:isPartnerValid1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="isTradingRelationshipValid1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:isTradingRelationshipValid1RequestMSG"/>
+      <s0:output message="s1:isTradingRelationshipValid1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listPartners1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listPartners1RequestMSG"/>
+      <s0:output message="s1:listPartners1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listTradingRelationships1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listTradingRelationships1RequestMSG"/>
+      <s0:output message="s1:listTradingRelationships1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="removeTradingRelationship1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:removeTradingRelationship1RequestMSG"/>
+      <s0:output message="s1:removeTradingRelationship1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveGroupPartners1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveGroupPartners1RequestMSG"/>
+      <s0:output message="s1:retrieveGroupPartners1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrievePartner1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrievePartner1RequestMSG"/>
+      <s0:output message="s1:retrievePartner1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrievePartnerStatus1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrievePartnerStatus1RequestMSG"/>
+      <s0:output message="s1:retrievePartnerStatus1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveTradingRelationship1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveTradingRelationship1RequestMSG"/>
+      <s0:output message="s1:retrieveTradingRelationship1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="updatePartner1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:updatePartner1RequestMSG"/>
+      <s0:output message="s1:updatePartner1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="updateTradingRelationship1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:updateTradingRelationship1RequestMSG"/>
+      <s0:output message="s1:updateTradingRelationship1ResponseMSG"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="PartnerMgrSoapBinding" type="s1:PartnerMgr">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="CreatePartner1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:CreatePartner1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="CreateTradingRelationship1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:CreateTradingRelationship1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="isPartnerValid1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:isPartnerValid1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="isTradingRelationshipValid1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:isTradingRelationshipValid1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listPartners1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listPartners1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listTradingRelationships1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listTradingRelationships1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="removeTradingRelationship1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:removeTradingRelationship1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveGroupPartners1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveGroupPartners1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrievePartner1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrievePartner1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrievePartnerStatus1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrievePartnerStatus1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveTradingRelationship1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveTradingRelationship1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="updatePartner1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:updatePartner1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="updateTradingRelationship1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:updateTradingRelationship1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="PartnerMgr">
+    <s0:port binding="s1:PartnerMgrSoapBinding" name="PartnerMgrPort">
+      <s2:address location="http://localhost:8080/acximservice/PartnerMgr"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

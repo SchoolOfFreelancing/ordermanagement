@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<!--
+<!DOCTYPE ACXPartOrderRequest SYSTEM "http://seaking.aaih.net/DTD/ACXPartOrderRequest.dtd">
+-->
+<ACXPartOrderRequest><Envelope><BuyPartnerID>4000300020001058</BuyPartnerID><DocVersNum>1.0</DocVersNum></Envelope><RequestRouter><SellPartnerID>4000300020001047</SellPartnerID><CustNum>DC01</CustNum><DocGenBy>xander</DocGenBy></RequestRouter><PartRequestAction><AskPayForm>No</AskPayForm><AskShipList>No</AskShipList></PartRequestAction><PartOrderRequest><RequestItem><ID>0</ID><PartNum>RP-D506M</PartNum><MfgCode>RAY</MfgCode><Qty>1</Qty><ShipCode>0</ShipCode><RelCode>Regular</RelCode><BackOrderCode>C</BackOrderCode><CatVers></CatVers><CatDataVers></CatDataVers><Vehicle><CatVehID></CatVehID><Year></Year><Make></Make><Model></Model><Engine></Engine><SpeclCond>No</SpeclCond></Vehicle></RequestItem><RequestOrder><UseDefaultAddrFlag>YES</UseDefaultAddrFlag><AllowPartialFill>YES</AllowPartialFill></RequestOrder></PartOrderRequest></ACXPartOrderRequest>

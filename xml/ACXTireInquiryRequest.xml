@@ -1,0 +1,22 @@
+<ACXTireInquiryRequest>
+    <Envelope>
+        <BuyPartnerID></BuyPartnerID>
+        <DocVersNum>1.0</DocVersNum>
+        <DocGenBy>ACX SDK Example Program</DocGenBy>
+    </Envelope>
+    <RequestRouter>
+        <SellPartnerID></SellPartnerID>
+        <CustNum></CustNum>
+    </RequestRouter>
+    <TireInquiryRequest>
+        <RequestItem>
+            <ID></ID>
+            <TireSize>
+                <Width></Width>
+                <Ratio></Ratio>
+                <Diameter></Diameter>
+            </TireSize>
+            <Qty></Qty>
+        </RequestItem>
+    </TireInquiryRequest>
+</ACXTireInquiryRequest>

@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<s0:definitions name="AdminMgrDefinitions" targetNamespace="http://com/activant/web/services/admin" xmlns="" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s1="http://com/activant/web/services/admin" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <s0:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://com/activant/web/services/admin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="metadata1TYPE">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="timeout" nillable="true" type="xs:int"/>
+          <xs:element minOccurs="1" name="ACXTrackNum" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:element name="Credentials">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" name="Token" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="1" name="TokenSignature" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="myFaultTYPE">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="acxNotificationResponse" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listBusinessSystemProviders1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listBusinessSystemProviders1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listPartnerTypes1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listPartnerTypes1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listMemberAffiliations1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listMemberAffiliations1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listApplicationServices1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listApplicationServices1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="retrieveLegalAgreement1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveLegalAgreement1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="listStaticAssociations1Request">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requestString" type="xs:string"/>
+            <xs:element name="metadata" type="s1:metadata1TYPE"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="listStaticAssociations1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:schema>
+  </s0:types>
+
+  <s0:message name="listBusinessSystemProviders1RequestMSG">
+    <s0:part element="s1:listBusinessSystemProviders1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listBusinessSystemProviders1ResponseMSG">
+    <s0:part element="s1:listBusinessSystemProviders1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listPartnerTypes1RequestMSG">
+    <s0:part element="s1:listPartnerTypes1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listPartnerTypes1ResponseMSG">
+    <s0:part element="s1:listPartnerTypes1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listMemberAffiliations1RequestMSG">
+    <s0:part element="s1:listMemberAffiliations1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listMemberAffiliations1ResponseMSG">
+    <s0:part element="s1:listMemberAffiliations1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listApplicationServices1RequestMSG">
+    <s0:part element="s1:listApplicationServices1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listApplicationServices1ResponseMSG">
+    <s0:part element="s1:listApplicationServices1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="retrieveLegalAgreement1RequestMSG">
+    <s0:part element="s1:retrieveLegalAgreement1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="retrieveLegalAgreement1ResponseMSG">
+    <s0:part element="s1:retrieveLegalAgreement1Response" name="theResponse"/>
+  </s0:message>
+
+  <s0:message name="listStaticAssociations1RequestMSG">
+    <s0:part element="s1:listStaticAssociations1Request" name="theRequest"/>
+    <s0:part element="s1:Credentials" name="Credentials"/>
+  </s0:message>
+  <s0:message name="listStaticAssociations1ResponseMSG">
+    <s0:part element="s1:listStaticAssociations1Response" name="theResponse"/>
+  </s0:message>
+
+
+  <s0:portType name="AdminMgr">
+    <s0:operation name="listBusinessSystemProviders1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listBusinessSystemProviders1RequestMSG"/>
+      <s0:output message="s1:listBusinessSystemProviders1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listPartnerTypes1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listPartnerTypes1RequestMSG"/>
+      <s0:output message="s1:listPartnerTypes1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listMemberAffiliations1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listMemberAffiliations1RequestMSG"/>
+      <s0:output message="s1:listMemberAffiliations1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listApplicationServices1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listApplicationServices1RequestMSG"/>
+      <s0:output message="s1:listApplicationServices1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="retrieveLegalAgreement1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:retrieveLegalAgreement1RequestMSG"/>
+      <s0:output message="s1:retrieveLegalAgreement1ResponseMSG"/>
+    </s0:operation>
+    <s0:operation name="listStaticAssociations1" parameterOrder="theRequest Credentials">
+      <s0:input message="s1:listStaticAssociations1RequestMSG"/>
+      <s0:output message="s1:listStaticAssociations1ResponseMSG"/>
+    </s0:operation>
+  </s0:portType>
+  <s0:binding name="AdminMgrSoapBinding" type="s1:AdminMgr">
+    <s2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <s0:operation name="listBusinessSystemProviders1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listBusinessSystemProviders1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listPartnerTypes1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listPartnerTypes1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listMemberAffiliations1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listMemberAffiliations1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listApplicationServices1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listApplicationServices1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="retrieveLegalAgreement1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:retrieveLegalAgreement1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+    <s0:operation name="listStaticAssociations1">
+      <s2:operation style="document"/>
+      <s0:input>
+        <s2:body parts="theRequest" use="literal"/>
+        <s2:header message="s1:listStaticAssociations1RequestMSG" part="Credentials" use="literal"/>
+      </s0:input>
+      <s0:output>
+        <s2:body parts="theResponse" use="literal"/>
+      </s0:output>
+    </s0:operation>
+  </s0:binding>
+  <s0:service name="AdminMgr">
+    <s0:port binding="s1:AdminMgrSoapBinding" name="AdminMgrPort">
+      <s2:address location="http://localhost:8080/acximservice/AdminMgr"/>
+    </s0:port>
+  </s0:service>
+</s0:definitions>

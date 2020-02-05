@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ACXBusinessSystemProvidersListResponse SYSTEM "http://dtd.staging.epnconnect.com/DTD/ACXBusinessSystemProvidersListResponse_v1_0.dtd">
+<ACXBusinessSystemProvidersListResponse>
+  <DocVersNum>1.0</DocVersNum>
+  <DocGenBy>ACXIM Directory Services</DocGenBy>
+  <BusSysProvider>
+    <BSPNumber>100</BSPNumber>
+    <BSPName>Epicor (iConnect)</BSPName>
+  </BusSysProvider>
+  <BusSysProvider>
+    <BSPNumber>200</BSPNumber>
+    <BSPName>Epicor (ACS)</BSPName>
+  </BusSysProvider>
+  <BusSysProvider>
+    <BSPNumber>300</BSPNumber>
+    <BSPName>Non Epicor</BSPName>
+  </BusSysProvider>
+</ACXBusinessSystemProvidersListResponse>
